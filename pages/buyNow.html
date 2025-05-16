@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bakery</title>
+    <link rel="stylesheet" href="../styling/buyNow.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav-container">
+      <nav class="nav-bar">
+        <div>
+          <a href="/index.html"
+            ><img src="../images/white logo.png" alt="Bakery Logo"
+          /></a>
+        </div>
+
+        <ul class="features">
+          <li><a class="nav-links" href="/index.html">Home</a></li>
+          <li>
+            <a class="nav-links" href="/pages/pastries.html">Pastries</a>
+          </li>
+          <li>
+            <a class="nav-links" href="/pages/profile.html">Profile</a>
+          </li>
+          <li><a class="nav-links" href="/pages/cart.html">Cart</a></li>
+        </ul>
+
+        <div class="buy-search">
+          <ul>
+            <li>
+              <a class="nav-links" id="account" href="/pages/buyNow.html"
+                >Buy Now</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-bars menu-icon" id="openMenu"></i>
+        <i class="fa-sharp fa-solid fa-xmark close-icon" id="closeMenu"></i>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-sect">
+        <h1 class="product-header">Product Details</h1>
+        <div class="product-details">
+          <div class="product-pics">
+            <img
+              class="product-velvet"
+              src="../images/velvet.png"
+              alt="Velvet Cake"
+            />
+          </div>
+
+          <div class="descr">
+            <h2>BEST OF BOTH</h2>
+            <strong>N12,000</strong>
+
+            <div class="inches-sect">
+              <p>Inches:</p>
+              <div class="inches">
+                <label><input type="radio" name="inches" />8 Inches</label>
+                <label><input type="radio" name="inches" />10 Inches</label>
+                <label><input type="radio" name="inches" />12 Inches</label>
+                <label><input type="radio" name="inches" />14 Inches</label>
+              </div>
+            </div>
+
+            <div class="layers-sect">
+              <p>Layers</p>
+              <div class="layers">
+                <label><input type="radio" name="layers" />3 Layers</label>
+                <label><input type="radio" name="layers" />4 Layers</label>
+              </div>
+            </div>
+
+            <div class="greeting">
+              <p>Add Greeting Card?</p>
+
+              <div class="options">
+                <label>
+                  <input type="radio" name="options" />
+                  Yes
+                </label>
+              </div>
+
+              <div class="options">
+                <label>
+                  <input type="radio" name="options" />
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <p>Add Comment</p>
+              <input class="input" type="text" placeholder="Short-text" />
+            </div>
+
+            <div>
+              <p>Topping</p>
+              <p>
+                Please select from our toppings options below. Kindly note that
+                flowers, toppers, etc are subject to availability.
+              </p>
+            </div>
+
+            <div class="topping">
+              <p>Flower Topping</p>
+
+              <div class="flower">
+                <div>
+                  <label>
+                    <input type="radio" name="flower_topping" />
+                    Fresh Flowers (+ ₦16,500.00 NGN)
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    <input type="radio" name="flower_topping" />
+                    Fresh Flowers (+ ₦25,000.00 NGN)
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="">Description</p>
+              <p class="desc-text">
+                Layers of our salted caramel cookie monster and our moist
+                chocolate cake sandwiched with our salted caramel filling and
+                chocolate ganache; and covered in Swiss meringue buttercream
+                frosting or coffee flavoured frosting.
+              </p>
+            </div>
+
+            <div class="btn">
+              <a class="buy" href="./cart.html">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="related-section">
+        <h1 class="related-header">Related Pastries</h1>
+
+        <div class="related-cakes">
+          <i class="fa-solid fa-chevron-left icon-left"></i>
+          <div class="cakes">
+            <img
+              src="../images/chocolate delight.png"
+              alt="Chocolate Fudge Delight"
+            />
+            <h3>Chocolate Fudge Delight</h3>
+            <p>
+              An indulgent favorite, featuring layers of gooey chocolate fudge
+              that melt in your mouth with every bite. A chocolate lover’s
+              dream!
+            </p>
+            <a class="read-more" href="/pages/pastries.html">Buy Now</a>
+          </div>
+
+          <div class="cakes">
+            <img src="../images/milly_chocolate.png" alt="Milky Chocolate" />
+            <h3>Dark Milky Chocolate</h3>
+            <p>
+              Bold dark chocolate meets smooth, creamy milk chocolate in this
+              luxurious creation that’s guaranteed to satisfy every chocolate
+              craving.
+            </p>
+            <a class="read-more" href="/pages/pastries.html">Buy Now</a>
+          </div>
+
+          <div class="cakes">
+            <img src="../images/vanilla.png" alt="Vanilla Cake" />
+            <h3>Dreamy Vanilla Bean</h3>
+            <p>
+              Soft, fluffy layers infused with pure vanilla bean essence and
+              finished with a luscious, creamy frosting for a simple yet elegant
+              delight.
+            </p>
+            <a class="read-more" href="/pages/pastries.html">Buy Now</a>
+          </div>
+
+          <div class="cakes">
+            <img
+              src="../images/chocolate delight.png"
+              alt="Chocolate Fudge Delight"
+            />
+            <h3>Chocolate Fudge Delight</h3>
+            <p>
+              An indulgent favorite, featuring layers of gooey chocolate fudge
+              that melt in your mouth with every bite. A chocolate lover’s
+              dream!
+            </p>
+            <a class="read-more" href="/pages/pastries.html">Buy Now</a>
+          </div>
+
+          <i class="fa-solid fa-chevron-right icon-right"></i>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img src="../images/white logo.png" alt="White Logo" />
+        <p>Address:</p>
+        <p>25, Roehampton, London.</p>
+
+        <div class="contact">
+          <div>
+            <p>Contact</p>
+            <p>1800 123 4567</p>
+            <p>info@bakery.io</p>
+          </div>
+
+          <div class="socials">
+            <a href="www.facebook.com"
+              ><img src="../images/Facebook.png" alt="Facebook"
+            /></a>
+            <a href="www.instagram.com">
+              <img src="../images/Instagram.png" alt="Instagram"
+            /></a>
+            <a href="www.x.com"><img src="../images/X.png" alt="X" /></a>
+            <a href="www.linkedin.com"
+              ><img src="../images/LinkedIn.png" alt="LinkedIn"
+            /></a>
+            <a href="www.youtube.com"
+              ><img src="../images/Youtube.png" alt="Youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="copyright">
+        <p>Copyright © 2024. TheBakery. All rights reserved.</p>
+
+        <div class="terms">
+          <ul>
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms of Service</a></li>
+            <li><a href="">Cookies Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navBar = document.querySelector(".nav-bar");
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        openMenu.addEventListener("click", () => {
+          navBar.classList.add("open");
+          openMenu.style.display = "none";
+          closeMenu.style.display = "block";
+        });
+
+        closeMenu.addEventListener("click", () => {
+          navBar.classList.remove("open");
+          closeMenu.style.display = "none";
+          openMenu.style.display = "block";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll(".nav-links");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            navLinks.forEach((nav) => nav.classList.remove("active"));
+
+            link.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bakery</title>
+    <link rel="stylesheet" href="../styling/cart.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav-container">
+      <nav class="nav-bar" aria-label="Main Navigation">
+        <a href="/index.html"
+          ><img src="../images/white logo.png" alt="Bakery Logo"
+        /></a>
+
+        <ul class="features">
+          <li><a class="nav-links" href="/index.html">Home</a></li>
+          <li>
+            <a class="nav-links" href="/pages/pastries.html">Pastries</a>
+          </li>
+          <li><a class="nav-links" href="/pages/profile.html">Profile</a></li>
+          <li><a class="nav-links active" href="/pages/cart.html">Cart</a></li>
+        </ul>
+
+        <div class="buy-search">
+          <!-- <i class="fa-solid fa-magnifying-glass search"></i> -->
+          <ul>
+            <li>
+              <a class="nav-links" id="account" href="/pages/buyNow.html"
+                >Buy Now</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-bars menu-icon" id="openMenu"></i>
+        <i class="fa-sharp fa-solid fa-xmark close-icon" id="closeMenu"></i>
+      </nav>
+    </header>
+
+    <main class="cart-container">
+      <div class="customer-info">
+        <section class="personal-info">
+          <h1>Personal Information</h1>
+          <hr />
+          <input type="text" placeholder="Your Name" />
+
+          <div class="input-digit">
+            <input type="text" placeholder="Email" />
+            <input type="number" placeholder="Phone number" />
+          </div>
+        </section>
+
+        <section class="shipping">
+          <h1>Shipping Address</h1>
+          <hr />
+          <input type="text" placeholder="Address" />
+
+          <div class="input-digit">
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="Country" />
+          </div>
+        </section>
+
+        <section class="voucher">
+          <h1>Voucher</h1>
+          <hr />
+          <input type="text" placeholder="Enter Voucher Code" />
+        </section>
+
+        <section class="payment">
+          <h1>Payment Methods</h1>
+          <hr />
+          <div class="cards">
+            <label
+              ><input
+                class="radio-form"
+                type="radio"
+                name="method"
+                value="cash"
+              />Cash on Delivery</label
+            >
+            <label
+              ><input
+                class="radio-form"
+                type="radio"
+                name="method"
+                value="credit"
+              />Credit or Debit</label
+            >
+          </div>
+
+          <input type="text" id="card-holder" placeholder="Card Holder" />
+          <input type="number" id="card-number" placeholder="Card Number" />
+          <div class="card-details">
+            <input type="number" id="exp-date" placeholder="EXP Date" />
+            <input type="number" id="cvc" placeholder="CVC" />
+          </div>
+        </section>
+      </div>
+
+      <section class="checkout">
+        <h1>Cart</h1>
+        <hr />
+
+        <article class="cart-item">
+          <img
+            class="img"
+            src="../images/cart1.png"
+            alt="Chocolate Fudge Delight"
+          />
+          <div class="item">
+            <p class="name">Chocolate Delight</p>
+            <p>Remove</p>
+          </div>
+          <p>$40.00</p>
+        </article>
+
+        <article class="cart-item">
+          <img
+            class="img"
+            src="../images/cart2.png"
+            alt="Strawberry Almond Delight"
+          />
+          <div class="item">
+            <p class="name">Strawberry Almond</p>
+            <p>Remove</p>
+          </div>
+          <p>$40.00</p>
+        </article>
+
+        <hr />
+
+        <div class="subtotal">
+          <div>
+            <p>Subtotal</p>
+            <p>Discount</p>
+            <p>Shipping</p>
+          </div>
+
+          <div>
+            <p>$80.00</p>
+            <p>$0.00</p>
+            <p>$2.00</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="total">
+          <p class="name">Total</p>
+          <p class="name">$82.00</p>
+        </div>
+
+        <div class="checkout-btn">
+          <a class="check" href="">Checkout</a>
+        </div>
+      </section>
+    </main>
+
+    <div id="modalOverlay" class="modal-overlay"></div>
+
+    <dialog id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <img
+          src="../images/confirmation-animation.png"
+          alt="confirmed payment icon"
+        />
+        <h2>Successful</h2>
+        <p>Your orders have been placed successfully</p>
+        <p>
+          An Email has been sent to
+          <span style="font-weight: 700"> johnDoe@gmail.com.</span> Kindly check
+          your Email to track your order
+        </p>
+
+        <a href="/index.html" class="modal-btn" id="closeModal"> Done</a>
+      </div>
+    </dialog>
+
+    <footer class="footer" aria-label="footer">
+      <div class="footer-content">
+        <img src="../images/white logo.png" alt="White Logo" />
+        <p>Address:</p>
+        <p>25, Roehampton, London.</p>
+
+        <div class="contact">
+          <div>
+            <p>Contact</p>
+            <p>1800 123 4567</p>
+            <p>info@bakery.io</p>
+          </div>
+
+          <div class="socials">
+            <a href="www.facebook.com"
+              ><img src="../images/Facebook.png" alt="Facebook"
+            /></a>
+            <a href="www.instagram.com">
+              <img src="../images/Instagram.png" alt="Instagram"
+            /></a>
+            <a href="www.x.com"><img src="../images/X.png" alt="X" /></a>
+            <a href="www.linkedin.com"
+              ><img src="../images/LinkedIn.png" alt="LinkedIn"
+            /></a>
+            <a href="www.youtube.com"
+              ><img src="../images/Youtube.png" alt="Youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="copyright">
+        <p>Copyright © 2024. TheBakery. All rights reserved.</p>
+
+        <div class="terms">
+          <ul>
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms of Service</a></li>
+            <li><a href="">Cookies Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navBar = document.querySelector(".nav-bar");
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        openMenu.addEventListener("click", () => {
+          navBar.classList.add("open");
+          openMenu.style.display = "none";
+          closeMenu.style.display = "block";
+        });
+
+        closeMenu.addEventListener("click", () => {
+          navBar.classList.remove("open");
+          closeMenu.style.display = "none";
+          openMenu.style.display = "block";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const checkoutButton = document.querySelector(".checkout-btn a.check");
+        const modal = document.getElementById("confirmationModal");
+        const closeModalButton = document.getElementById("closeModal");
+        const modalOverlay = document.getElementById("modalOverlay");
+
+        checkoutButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.style.display = "block";
+          modalOverlay.style.display = "block";
+        });
+
+        closeModalButton.addEventListener("click", () => {
+          modal.style.display = "none";
+          modalOverlay.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
